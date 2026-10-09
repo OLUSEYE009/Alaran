@@ -1,17 +1,7 @@
 import { motion, useReducedMotion } from "motion/react";
-import { localImage } from "../assets/images";
+import PORTRAIT from "../assets/images/abdulamid.jpg";
 import { ArrowUpRight } from "./Arrow";
 import { LogoMark } from "./Logo";
-
-/**
- * YOUR PORTRAIT
- * Save your photo as:  src/assets/images/abdulamid.jpg
- * It will replace the placeholder automatically when you rebuild.
- */
-const PORTRAIT = localImage(
-  "src/assets/images/abdulamid.jpg",
-  "https://images.pexels.com/photos/9617887/pexels-photo-9617887.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1350&w=1000"
-);
 
 const DISCIPLINES = ["Graphic design", "Video editing", "Visual storytelling", "Print design"];
 
