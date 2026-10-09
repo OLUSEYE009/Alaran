@@ -172,16 +172,16 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
   ],
   signage: [
     {
-      title: "A place to find",
+      title: "Atelier Nezer",
       discipline: "Exterior signage",
       description: "Clear, confident building identification with real-world presence.",
       approach: "Legibility at a distance shapes the scale, contrast and placement of every element.",
-      details: ["Exterior sign", "Wayfinding idea", "Facade mockup"],
+      details: ["Exterior sign", "Wayfinding idea", "Billboard mockup"],
       image: SIGN_01,
       alt: "Exterior signage by Abdulamid Alaran",
     },
     {
-      title: "After dark",
+      title: "Taiwan Acrylic  Plastic",
       discipline: "Illuminated signage",
       description: "Dimensional lettering designed to make an entrance memorable.",
       approach: "A sign that is part of the building by day and a landmark in its own right by night.",
