@@ -86,7 +86,7 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
       approach: "Tactile details that make a first impression memorable.",
       details: ["Embossing", "Spot UV", "Premium stock"],
       // REPLACE → src/assets/images/mockup-02.jpg
-      image: localImage("mockup-02.jpg"),
+      image: localImage("src/assets/images/mockup-02.jpg"),
       alt: "Business card mockup",
     },
     {
