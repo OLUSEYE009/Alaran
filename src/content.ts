@@ -1,4 +1,7 @@
 import { localImage } from "./assets/images";
+import MOCKUP_01 from "./assets/images/mockup-01.jpeg";
+import MOCKUP_02 from "./assets/images/mockup-02.jpeg";
+import MOCKUP_03 from "./assets/images/mockup-03.jpeg";
 
 /* ==========================================================================
    HOW TO ADD YOUR REAL PROJECT IMAGES
@@ -10,12 +13,15 @@ import { localImage } from "./assets/images";
      → rebuild → your image appears automatically.
    Until you add the file, the fallback photo is shown.
 
+   Mockups are imported directly at the top of this file, so their file
+   names and extensions must match those imports exactly.
+
    Key Images:
    - Your portrait:   src/assets/images/abdulamid.jpg   (About section)
    - Top banner:      src/assets/images/hero-studio.jpg (Hero workspace photo)
    - Graphic Design:  src/assets/images/service-design.jpg (Services section)
    - Printing:        src/assets/images/service-printing.jpg (Services section)
-   - Mockups:         src/assets/images/mockup-01.jpg, mockup-02.jpg, mockup-03.jpg
+   - Mockups:         src/assets/images/mockup-01.jpeg, mockup-02.jpeg, mockup-03.jpeg
    - Flyers:          src/assets/images/work-flyer-food.jpg, work-flyer-perfume.jpg, work-flyer-event.jpg
    - Branding:        src/assets/images/work-brand-perfume.jpg, work-brand-water.jpg, work-brand-fashion.jpg
    - Signage:         src/assets/images/work-sign-health.jpg, work-sign-studio.jpg, work-sign-shield.jpg
@@ -75,8 +81,7 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
       description: "Luxury fragrance packaging with gold foil details and premium finishes.",
       approach: "A restrained visual system lets the material, monogram and finish carry the character of the brand.",
       details: ["3D mockup", "Packaging design", "Foil finish"],
-      // REPLACE → src/assets/images/mockup-01.jpg
-      image: localImage("src/assets/images/mockup-01.jpeg"),
+      image: MOCKUP_01,
       alt: "Perfume packaging mockup",
     },
     {
@@ -85,8 +90,7 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
       description: "Premium business cards with embossed logo and spot UV details.",
       approach: "Tactile details that make a first impression memorable.",
       details: ["Embossing", "Spot UV", "Premium stock"],
-      // REPLACE → src/assets/images/mockup-02.jpg
-      image: localImage("src/assets/images/mockup-02.jpeg"),
+      image: MOCKUP_02,
       alt: "Business card mockup",
     },
     {
@@ -95,8 +99,7 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
       description: "Water bottle label with wave-inspired pattern and clean typography.",
       approach: "A simple language creates recognition across the product line.",
       details: ["Label design", "Product photography", "Mockup render"],
-      // REPLACE → src/assets/images/mockup-03.jpg
-      image: localImage("src/assets/images/mockup-03.jpeg"),
+      image: MOCKUP_03,
       alt: "Bottle label mockup",
     },
   ],
