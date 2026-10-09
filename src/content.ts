@@ -76,7 +76,7 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
       approach: "A restrained visual system lets the material, monogram and finish carry the character of the brand.",
       details: ["3D mockup", "Packaging design", "Foil finish"],
       // REPLACE → src/assets/images/mockup-01.jpg
-      image: localImage("mockup-01.jpg", "https://images.pexels.com/photos/36779953/pexels-photo-36779953.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"),
+      image: localImage("src/assets/images/mockup-01.jpeg"),
       alt: "Perfume packaging mockup",
     },
     {
@@ -86,7 +86,7 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
       approach: "Tactile details that make a first impression memorable.",
       details: ["Embossing", "Spot UV", "Premium stock"],
       // REPLACE → src/assets/images/mockup-02.jpg
-      image: localImage("src/assets/images/mockup-02.jpg"),
+      image: localImage("src/assets/images/mockup-02.jpeg"),
       alt: "Business card mockup",
     },
     {
@@ -96,7 +96,7 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
       approach: "A simple language creates recognition across the product line.",
       details: ["Label design", "Product photography", "Mockup render"],
       // REPLACE → src/assets/images/mockup-03.jpg
-      image: localImage("mockup-03.jpg", "https://images.pexels.com/photos/31012803/pexels-photo-31012803.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"),
+      image: localImage("src/assets/images/mockup-03.jpeg"),
       alt: "Bottle label mockup",
     },
   ],
