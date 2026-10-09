@@ -1,7 +1,7 @@
 import { localImage } from "./assets/images";
-import MOCKUP_01 from "./assets/images/mockup-01.jpeg";
-import MOCKUP_02 from "./assets/images/mockup-02.jpeg";
-import MOCKUP_03 from "./assets/images/mockup-03.jpeg";
+import SIGN_01 from "./assets/images/mockup-01.jpeg";
+import SIGN_02 from "./assets/images/mockup-02.jpeg";
+import SIGN_03 from "./assets/images/mockup-03.jpeg";
 
 /* ==========================================================================
    HOW TO ADD YOUR REAL PROJECT IMAGES
@@ -13,18 +13,18 @@ import MOCKUP_03 from "./assets/images/mockup-03.jpeg";
      → rebuild → your image appears automatically.
    Until you add the file, the fallback photo is shown.
 
-   Mockups are imported directly at the top of this file, so their file
-   names and extensions must match those imports exactly.
+   Signage images are imported directly at the top of this file, so their
+   file names and extensions must match those imports exactly.
 
    Key Images:
    - Your portrait:   src/assets/images/abdulamid.jpg   (About section)
    - Top banner:      src/assets/images/hero-studio.jpg (Hero workspace photo)
    - Graphic Design:  src/assets/images/service-design.jpg (Services section)
    - Printing:        src/assets/images/service-printing.jpg (Services section)
-   - Mockups:         src/assets/images/mockup-01.jpeg, mockup-02.jpeg, mockup-03.jpeg
+   - Mockups:         src/assets/images/mockup-perfume.jpg, mockup-cards.jpg, mockup-bottle.jpg
    - Flyers:          src/assets/images/work-flyer-food.jpg, work-flyer-perfume.jpg, work-flyer-event.jpg
    - Branding:        src/assets/images/work-brand-perfume.jpg, work-brand-water.jpg, work-brand-fashion.jpg
-   - Signage:         src/assets/images/work-sign-health.jpg, work-sign-studio.jpg, work-sign-shield.jpg
+   - Signage:         src/assets/images/mockup-01.jpeg, mockup-02.jpeg, mockup-03.jpeg
    ========================================================================== */
 
 export const DESIGN_CLIENTS = [
@@ -81,7 +81,8 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
       description: "Luxury fragrance packaging with gold foil details and premium finishes.",
       approach: "A restrained visual system lets the material, monogram and finish carry the character of the brand.",
       details: ["3D mockup", "Packaging design", "Foil finish"],
-      image: MOCKUP_01,
+      // REPLACE → src/assets/images/mockup-perfume.jpg
+      image: localImage("mockup-perfume.jpg", "https://images.pexels.com/photos/36779955/pexels-photo-36779955.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"),
       alt: "Perfume packaging mockup",
     },
     {
@@ -90,7 +91,8 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
       description: "Premium business cards with embossed logo and spot UV details.",
       approach: "Tactile details that make a first impression memorable.",
       details: ["Embossing", "Spot UV", "Premium stock"],
-      image: MOCKUP_02,
+      // REPLACE → src/assets/images/mockup-cards.jpg
+      image: localImage("mockup-cards.jpg", "https://images.pexels.com/photos/5650018/pexels-photo-5650018.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"),
       alt: "Business card mockup",
     },
     {
@@ -99,7 +101,8 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
       description: "Water bottle label with wave-inspired pattern and clean typography.",
       approach: "A simple language creates recognition across the product line.",
       details: ["Label design", "Product photography", "Mockup render"],
-      image: MOCKUP_03,
+      // REPLACE → src/assets/images/mockup-bottle.jpg
+      image: localImage("mockup-bottle.jpg", "https://images.pexels.com/photos/593099/pexels-photo-593099.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"),
       alt: "Bottle label mockup",
     },
   ],
@@ -174,9 +177,8 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
       description: "Clear, confident building identification with real-world presence.",
       approach: "Legibility at a distance shapes the scale, contrast and placement of every element.",
       details: ["Exterior sign", "Wayfinding idea", "Facade mockup"],
-      // REPLACE → src/assets/images/work-sign-health.jpg
-      image: localImage("work-sign-health.jpg", "https://images.pexels.com/photos/19093452/pexels-photo-19093452.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"),
-      alt: "Illustrative healthcare building signage mockup",
+      image: SIGN_01,
+      alt: "Exterior signage by Abdulamid Alaran",
     },
     {
       title: "After dark",
@@ -184,9 +186,8 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
       description: "Dimensional lettering designed to make an entrance memorable.",
       approach: "A sign that is part of the building by day and a landmark in its own right by night.",
       details: ["Lit lettering", "Storefront mockup", "Material direction"],
-      // REPLACE → src/assets/images/work-sign-studio.jpg
-      image: localImage("work-sign-studio.jpg", "https://images.pexels.com/photos/10175387/pexels-photo-10175387.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"),
-      alt: "Illustrative illuminated studio signage mockup",
+      image: SIGN_02,
+      alt: "Illuminated signage by Abdulamid Alaran",
     },
     {
       title: "The first impression",
@@ -194,9 +195,8 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
       description: "A clear visual signature for a professional space.",
       approach: "A considered combination of lettering and symbol brings the visual identity into the room.",
       details: ["Interior sign", "Reception mockup", "Brand application"],
-      // REPLACE → src/assets/images/work-sign-shield.jpg
-      image: localImage("work-sign-shield.jpg", "https://images.pexels.com/photos/5691036/pexels-photo-5691036.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"),
-      alt: "Illustrative corporate interior signage mockup",
+      image: SIGN_03,
+      alt: "Corporate signage by Abdulamid Alaran",
     },
   ],
 };
