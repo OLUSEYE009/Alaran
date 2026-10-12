@@ -93,7 +93,7 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
       discipline: "Branded Bag mockup",
       description: "Premium business bag with embossed logo details.",
       approach: "Tactile details that make a first impression memorable.",
-      details: ["Embossing", "-", "Premium stock"],
+      details: ["Embossing", "Product photography", "Premium stock"],
       // REPLACE → src/assets/images/mockup-cards.jpg
       image: MOCK_02,
       alt: "Food Business bag mockup",
@@ -103,7 +103,7 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
       discipline: "mockup",
       description: "Whole shiel station design and clean typography.",
       approach: "A simple language creates recognition across the product line.",
-      details: ["Label design", "Product photography", "Mockup render"],
+      details: ["Label design", "3D Render", "Mockup render"],
       image: MOCK_03,
       alt: "Wholeshield Station mockup",
     },
