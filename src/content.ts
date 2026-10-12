@@ -5,6 +5,9 @@ import SIGN_03 from "./assets/images/mockup-03.jpeg";
 import MOCK_01 from "./assets/images/signage1.jpg";
 import MOCK_02 from "./assets/images/signage2.jpg";
 import MOCK_03 from "./assets/images/signage3.jpg";
+import FLYER_01 from "./assets/images/flyer1.jpg";
+import FLYER_02 from "./assets/images/flyer2.jpg";
+import FLYER_03 from "./assets/images/flyer3.jpg";
 
 /* ==========================================================================
    HOW TO ADD YOUR REAL PROJECT IMAGES
@@ -116,7 +119,7 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
       approach: "An expressive headline, a rich food image and a layout designed to catch attention in hand or on a feed.",
       details: ["Promotional flyer", "Social adaptation", "Print concept"],
       // REPLACE → src/assets/images/work-flyer-food.jpg
-      image: localImage("work-flyer-food.jpg", "https://images.pexels.com/photos/8743888/pexels-photo-8743888.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"),
+      image: FLYER_01,
       alt: "Illustrative food promotion flyer mockup",
     },
     {
@@ -126,7 +129,7 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
       approach: "Quiet space around the product gives the launch message room to feel elevated and memorable.",
       details: ["Launch artwork", "Product story", "Print concept"],
       // REPLACE → src/assets/images/work-flyer-perfume.jpg
-      image: localImage("work-flyer-perfume.jpg", "https://images.pexels.com/photos/36779955/pexels-photo-36779955.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"),
+      image: FLYER_02,
       alt: "Illustrative perfume launch flyer mockup",
     },
     {
@@ -136,7 +139,7 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
       approach: "A clear hierarchy makes the invitation easy to read while still feeling like an occasion.",
       details: ["Event flyer", "Invitation", "Print concept"],
       // REPLACE → src/assets/images/work-flyer-event.jpg
-      image: localImage("work-flyer-event.jpg", "https://images.pexels.com/photos/5650018/pexels-photo-5650018.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"),
+      image: FLYER_03,
       alt: "Illustrative opening event flyer mockup",
     },
   ],
