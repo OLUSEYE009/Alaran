@@ -2,6 +2,9 @@ import { localImage } from "./assets/images";
 import SIGN_01 from "./assets/images/mockup-01.jpeg";
 import SIGN_02 from "./assets/images/mockup-02.jpeg";
 import SIGN_03 from "./assets/images/mockup-03.jpeg";
+import MOCK_01 from "./assets/images/signage1.jpg";
+import MOCK_02 from "./assets/images/signage2.jpg";
+import MOCK_03 from "./assets/images/signage3.jpg";
 
 /* ==========================================================================
    HOW TO ADD YOUR REAL PROJECT IMAGES
@@ -76,34 +79,33 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
   all: [],
   mockups: [
     {
-      title: "Perfume packaging",
+      title: "Shoe packaging",
       discipline: "Product mockup",
-      description: "Luxury fragrance packaging with gold foil details and premium finishes.",
+      description: "Luxury shoe packaging and premium finishes.",
       approach: "A restrained visual system lets the material, monogram and finish carry the character of the brand.",
       details: ["3D mockup", "Packaging design", "Foil finish"],
       // REPLACE → src/assets/images/mockup-perfume.jpg
-      image: localImage("mockup-perfume.jpg", "https://images.pexels.com/photos/36779955/pexels-photo-36779955.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"),
-      alt: "Perfume packaging mockup",
+      image: MOCK_01,
+      alt: "Jarulee Shoe packaging mockup",
     },
     {
-      title: "Business card set",
-      discipline: "Stationery mockup",
-      description: "Premium business cards with embossed logo and spot UV details.",
+      title: "Food Business Bag set",
+      discipline: "Branded Bag mockup",
+      description: "Premium business bag with embossed logo details.",
       approach: "Tactile details that make a first impression memorable.",
-      details: ["Embossing", "Spot UV", "Premium stock"],
+      details: ["Embossing", "-", "Premium stock"],
       // REPLACE → src/assets/images/mockup-cards.jpg
-      image: localImage("mockup-cards.jpg", "https://images.pexels.com/photos/5650018/pexels-photo-5650018.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"),
-      alt: "Business card mockup",
+      image: MOCK_02,
+      alt: "Food Business bag mockup",
     },
     {
-      title: "Bottle label design",
-      discipline: "Packaging mockup",
-      description: "Water bottle label with wave-inspired pattern and clean typography.",
+      title: "Whole Shield ",
+      discipline: "mockup",
+      description: "Whole shiel station design and clean typography.",
       approach: "A simple language creates recognition across the product line.",
       details: ["Label design", "Product photography", "Mockup render"],
-      // REPLACE → src/assets/images/mockup-bottle.jpg
-      image: localImage("mockup-bottle.jpg", "https://images.pexels.com/photos/593099/pexels-photo-593099.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"),
-      alt: "Bottle label mockup",
+      image: MOCK_03,
+      alt: "Wholeshield Station mockup",
     },
   ],
   flyers: [
