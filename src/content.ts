@@ -1,4 +1,3 @@
-import { localImage } from "./assets/images";
 import SIGN_01 from "./assets/images/mockup-01.jpeg";
 import SIGN_02 from "./assets/images/mockup-02.jpeg";
 import SIGN_03 from "./assets/images/mockup-03.jpeg";
@@ -8,28 +7,26 @@ import MOCK_03 from "./assets/images/signage3.jpg";
 import FLYER_01 from "./assets/images/flyer1.jpg";
 import FLYER_02 from "./assets/images/flyer2.jpg";
 import FLYER_03 from "./assets/images/flyer3.jpg";
+import BRAND_01 from "./assets/images/brand1.png";
+import BRAND_02 from "./assets/images/brand2.png";
+import BRAND_03 from "./assets/images/brand3.jpeg";
 
 /* ==========================================================================
    HOW TO ADD YOUR REAL PROJECT IMAGES
    --------------------------------------------------------------------------
    Put each image inside:   src/assets/images/
-   Name it EXACTLY like the filename inside localImage(...) below.
-   Example: localImage("work-flyer-food.jpg", "https://...")
-     → drop your file at  src/assets/images/work-flyer-food.jpg
-     → rebuild → your image appears automatically.
-   Until you add the file, the fallback photo is shown.
-
-   Signage images are imported directly at the top of this file, so their
-   file names and extensions must match those imports exactly.
+   Name it EXACTLY like the filename in the import at the top of this file.
+   Mockups, flyers, branding and signage images are imported directly, so
+   their file names and extensions must match those imports exactly.
 
    Key Images:
    - Your portrait:   src/assets/images/abdulamid.jpg   (About section)
    - Top banner:      src/assets/images/hero-studio.jpg (Hero workspace photo)
    - Graphic Design:  src/assets/images/service-design.jpg (Services section)
    - Printing:        src/assets/images/service-printing.jpg (Services section)
-   - Mockups:         src/assets/images/mockup-perfume.jpg, mockup-cards.jpg, mockup-bottle.jpg
-   - Flyers:          src/assets/images/work-flyer-food.jpg, work-flyer-perfume.jpg, work-flyer-event.jpg
-   - Branding:        src/assets/images/work-brand-perfume.jpg, work-brand-water.jpg, work-brand-fashion.jpg
+   - Mockups:         src/assets/images/signage1.jpg, signage2.jpg, signage3.jpg
+   - Flyers:          src/assets/images/flyer1.jpg, flyer2.jpg, flyer3.jpg
+   - Branding:        src/assets/images/brand1.jpg, brand2.jpg, brand3.jpg
    - Signage:         src/assets/images/mockup-01.jpeg, mockup-02.jpeg, mockup-03.jpeg
    ========================================================================== */
 
@@ -87,7 +84,6 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
       description: "Luxury shoe packaging and premium finishes.",
       approach: "A restrained visual system lets the material, monogram and finish carry the character of the brand.",
       details: ["3D mockup", "Packaging design", "Foil finish"],
-      // REPLACE → src/assets/images/mockup-perfume.jpg
       image: MOCK_01,
       alt: "Jarulee Shoe packaging mockup",
     },
@@ -97,7 +93,6 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
       description: "Premium business bag with embossed logo details.",
       approach: "Tactile details that make a first impression memorable.",
       details: ["Embossing", "Product photography", "Premium stock"],
-      // REPLACE → src/assets/images/mockup-cards.jpg
       image: MOCK_02,
       alt: "Food Business bag mockup",
     },
@@ -118,7 +113,6 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
       description: "A bold, appetite-led print direction for a food promotion.",
       approach: "An expressive headline, a rich food image and a layout designed to catch attention in hand or on a feed.",
       details: ["Promotional flyer", "Social adaptation", "Print concept"],
-      // REPLACE → src/assets/images/work-flyer-food.jpg
       image: FLYER_01,
       alt: "Illustrative food promotion flyer mockup",
     },
@@ -128,7 +122,6 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
       description: "A refined launch layout with considered type and a striking product image.",
       approach: "Quiet space around the product gives the launch message room to feel elevated and memorable.",
       details: ["Launch artwork", "Product story", "Print concept"],
-      // REPLACE → src/assets/images/work-flyer-perfume.jpg
       image: FLYER_02,
       alt: "Illustrative perfume launch flyer mockup",
     },
@@ -138,7 +131,6 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
       description: "An event announcement designed to work in hand and on screen.",
       approach: "A clear hierarchy makes the invitation easy to read while still feeling like an occasion.",
       details: ["Event flyer", "Invitation", "Print concept"],
-      // REPLACE → src/assets/images/work-flyer-event.jpg
       image: FLYER_03,
       alt: "Illustrative opening event flyer mockup",
     },
@@ -150,8 +142,7 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
       description: "An identity direction built to feel distinctive at every touchpoint.",
       approach: "A restrained visual system lets the material, monogram and finish carry the character of the brand.",
       details: ["Identity direction", "Packaging", "Printed touchpoints"],
-      // REPLACE → src/assets/images/work-brand-perfume.jpg
-      image: localImage("work-brand-perfume.jpg", "https://images.pexels.com/photos/36779951/pexels-photo-36779951.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"),
+      image: BRAND_01,
       alt: "Illustrative luxury fragrance identity mockup",
     },
     {
@@ -160,8 +151,7 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
       description: "A clean product system that carries from shelf to story.",
       approach: "A simple wave-inspired language creates recognition across the bottle, label and campaign.",
       details: ["Label concept", "Bottle mockup", "Brand system"],
-      // REPLACE → src/assets/images/work-brand-water.jpg
-      image: localImage("work-brand-water.jpg", "https://images.pexels.com/photos/593099/pexels-photo-593099.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"),
+      image: BRAND_02,
       alt: "Illustrative bottled water branding mockup",
     },
     {
@@ -170,8 +160,7 @@ export const WORK_PREVIEWS: Record<WorkCategory, WorkPreview[]> = {
       description: "A flexible visual language for labels, clothing and packaging.",
       approach: "The mark stays confident whether it is embroidered, printed, or scaled down to a hang tag.",
       details: ["Identity direction", "Apparel mockup", "Packaging"],
-      // REPLACE → src/assets/images/work-brand-fashion.jpg
-      image: localImage("work-brand-fashion.jpg", "https://images.pexels.com/photos/30940601/pexels-photo-30940601.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200"),
+      image: BRAND_03,
       alt: "Illustrative apparel brand identity mockup",
     },
   ],
