@@ -3,11 +3,11 @@ import Reveal from "./Reveal";
 const TOOL_GROUPS = [
   {
     label: "Design",
-    tools: ["Photoshop", "Illustrator", "InDesign", "CorelDRAW", "Figma"],
+    tools: ["Photoshop", "Illustrator", "Canva", "CorelDRAW", "Figma"],
   },
   {
     label: "Video & motion",
-    tools: ["Premiere Pro", "After Effects", "Short-form edits"],
+    tools: ["Premiere Pro", "Capcut", "Short-form edits"],
   },
   {
     label: "Print",
