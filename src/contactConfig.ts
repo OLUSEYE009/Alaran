@@ -3,6 +3,6 @@
 export const WHATSAPP_NUMBER = "";
 
 export function makeWhatsAppLink(message: string) {
-  const number = WHATSAPP_NUMBER.replace(/\D/g, "");
+  const number = +2348148111865.replace(/\D/g, "");
   return `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
 }
