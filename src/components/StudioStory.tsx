@@ -1,7 +1,11 @@
+import { useState } from "react";
 import { motion, useReducedMotion } from "motion/react";
 import PORTRAIT from "../assets/images/abdulamid.jpg";
 import { ArrowUpRight } from "./Arrow";
 import { LogoMark } from "./Logo";
+
+const PORTRAIT_FALLBACK =
+  "https://res.cloudinary.com/cncy28o3/image/upload/v1792997886/abdulamid.jpg.png";
 
 const DISCIPLINES = ["Graphic design", "Video editing", "Visual storytelling", "Print design"];
 
@@ -9,6 +13,7 @@ const ease = [0.22, 1, 0.36, 1] as const;
 
 export default function StudioStory() {
   const reduced = useReducedMotion();
+  const [portraitSrc, setPortraitSrc] = useState<string>(PORTRAIT);
 
   return (
     <section id="about" className="bg-white py-20 md:py-32" aria-labelledby="about-heading">
@@ -40,9 +45,12 @@ export default function StudioStory() {
             className="relative z-10 aspect-[4/5] overflow-hidden bg-royal-50"
           >
             <motion.img
-              src={PORTRAIT}
+              src={portraitSrc}
               alt="Abdulamid Alaran, graphic designer and video editor"
               loading="lazy"
+              onError={() => {
+                if (portraitSrc !== PORTRAIT_FALLBACK) setPortraitSrc(PORTRAIT_FALLBACK);
+              }}
               initial={reduced ? false : { scale: 1.1 }}
               whileInView={{ scale: 1 }}
               viewport={{ once: true, amount: 0.2 }}
