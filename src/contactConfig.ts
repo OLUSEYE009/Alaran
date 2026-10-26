@@ -1,8 +1,8 @@
 // Add Abdulamid's verified number (country code + digits only) to open his chat directly.
 // Without it, the prefilled message opens WhatsApp's contact picker instead.
-export const WHATSAPP_NUMBER = "";
+export const WHATSAPP_NUMBER = "+2348148111865";
 
 export function makeWhatsAppLink(message: string) {
-  const number = +2348148111865.replace(/\D/g, "");
+  const number = WHATSAPP_NUMBER.replace(/\D/g, "");
   return `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
 }
